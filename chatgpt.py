@@ -35,7 +35,7 @@ class GPTWorker(QThread):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        # self.api_key = "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"  # 设置默认值
+      
         with open('api_key.txt') as f:
             self.api_key = f.read().strip()
 
